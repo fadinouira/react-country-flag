@@ -1,6 +1,6 @@
 {
   "name": "@fadi-ui/react-country-flag",
-  "version": "2.1.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
