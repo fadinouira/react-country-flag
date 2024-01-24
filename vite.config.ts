@@ -1,22 +1,28 @@
-import react from '@vitejs/plugin-react-swc';
+import { resolve } from 'path';
+
+import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
+import dts from 'vite-plugin-dts';
+import tsConfigPaths from 'vite-tsconfig-paths';
+import * as packageJson from './package.json';
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    tsConfigPaths(),
+    dts({
+      include: ['src/components/'],
+    }),
+  ],
   build: {
     lib: {
-      entry: './index.ts',
-      name: '@fadi-ui/react-country-flag',
-      fileName: '@fadi-ui/react-country-flag',
+      entry: resolve('src', 'components/index.ts'),
+      name: 'ReactViteLibrary',
+      formats: ['es', 'umd'],
+      fileName: (format) => `react-vite-library.${format}.js`,
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
-      output: {
-        globals: {
-          react: 'React',
-          'react-dom': 'React-dom',
-        },
-      },
+      external: [...Object.keys(packageJson.dependencies)],
     },
   },
 });

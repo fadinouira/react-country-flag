@@ -4,9 +4,9 @@ type LowercaseCountries = {
   [K in keyof FlagsType as Lowercase<K>]: FlagsType[K];
 };
 
-type LowercaseCountryCodes = keyof LowercaseCountries;
+export type LowercaseCountryCodes = keyof LowercaseCountries;
 
-export interface ReactFlagProps {
+export interface ReactCountryFlagProps {
   countryCode: CountryCodes | LowercaseCountryCodes;
   width?: number;
   height?: number;

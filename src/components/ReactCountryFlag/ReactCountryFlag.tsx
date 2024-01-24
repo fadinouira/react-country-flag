@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { CountryCodes } from '../Flags/Flags';
-import { ReactFlagProps } from './ReactFlag.type';
+import { ReactCountryFlagProps } from './ReactCountryFlag.type';
 
-export default function ReactFlag({ countryCode, height, width }: ReactFlagProps) {
+export function ReactCountryFlag({ countryCode, height, width }: ReactCountryFlagProps) {
   const [flagPath, setFlagPath] = useState<string | undefined>();
 
   useEffect(() => {

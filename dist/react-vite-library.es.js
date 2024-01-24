@@ -9,12 +9,12 @@ var H = { exports: {} }, A = {};
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-var ye;
+var _e;
 function fr() {
-  if (ye)
+  if (_e)
     return A;
-  ye = 1;
-  var R = Pe, _ = Symbol.for("react.element"), S = Symbol.for("react.fragment"), g = Object.prototype.hasOwnProperty, y = R.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, k = { key: !0, ref: !0, __self: !0, __source: !0 };
+  _e = 1;
+  var y = Pe, R = Symbol.for("react.element"), S = Symbol.for("react.fragment"), g = Object.prototype.hasOwnProperty, _ = y.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, k = { key: !0, ref: !0, __self: !0, __source: !0 };
   function E(T, l, w) {
     var d, b = {}, O = null, $ = null;
     w !== void 0 && (O = "" + w), l.key !== void 0 && (O = "" + l.key), l.ref !== void 0 && ($ = l.ref);
@@ -23,7 +23,7 @@ function fr() {
     if (T && T.defaultProps)
       for (d in l = T.defaultProps, l)
         b[d] === void 0 && (b[d] = l[d]);
-    return { $$typeof: _, type: T, key: O, ref: $, props: b, _owner: y.current };
+    return { $$typeof: R, type: T, key: O, ref: $, props: b, _owner: _.current };
   }
   return A.Fragment = S, A.jsx = E, A.jsxs = E, A;
 }
@@ -40,14 +40,14 @@ var I = {};
 var Te;
 function lr() {
   return Te || (Te = 1, process.env.NODE_ENV !== "production" && function() {
-    var R = Pe, _ = Symbol.for("react.element"), S = Symbol.for("react.portal"), g = Symbol.for("react.fragment"), y = Symbol.for("react.strict_mode"), k = Symbol.for("react.profiler"), E = Symbol.for("react.provider"), T = Symbol.for("react.context"), l = Symbol.for("react.forward_ref"), w = Symbol.for("react.suspense"), d = Symbol.for("react.suspense_list"), b = Symbol.for("react.memo"), O = Symbol.for("react.lazy"), $ = Symbol.for("react.offscreen"), X = Symbol.iterator, Se = "@@iterator";
+    var y = Pe, R = Symbol.for("react.element"), S = Symbol.for("react.portal"), g = Symbol.for("react.fragment"), _ = Symbol.for("react.strict_mode"), k = Symbol.for("react.profiler"), E = Symbol.for("react.provider"), T = Symbol.for("react.context"), l = Symbol.for("react.forward_ref"), w = Symbol.for("react.suspense"), d = Symbol.for("react.suspense_list"), b = Symbol.for("react.memo"), O = Symbol.for("react.lazy"), $ = Symbol.for("react.offscreen"), X = Symbol.iterator, Se = "@@iterator";
     function we(e) {
       if (e === null || typeof e != "object")
         return null;
       var r = X && e[X] || e[Se];
       return typeof r == "function" ? r : null;
     }
-    var C = R.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    var C = y.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
     function c(e) {
       {
         for (var r = arguments.length, t = new Array(r > 1 ? r - 1 : 0), n = 1; n < r; n++)
@@ -68,7 +68,7 @@ function lr() {
     var xe = !1, je = !1, ke = !1, Fe = !1, De = !1, Z;
     Z = Symbol.for("react.module.reference");
     function Ae(e) {
-      return !!(typeof e == "string" || typeof e == "function" || e === g || e === k || De || e === y || e === w || e === d || Fe || e === $ || xe || je || ke || typeof e == "object" && e !== null && (e.$$typeof === O || e.$$typeof === b || e.$$typeof === E || e.$$typeof === T || e.$$typeof === l || // This needs to include all possible module reference object
+      return !!(typeof e == "string" || typeof e == "function" || e === g || e === k || De || e === _ || e === w || e === d || Fe || e === $ || xe || je || ke || typeof e == "object" && e !== null && (e.$$typeof === O || e.$$typeof === b || e.$$typeof === E || e.$$typeof === T || e.$$typeof === l || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
@@ -98,7 +98,7 @@ function lr() {
           return "Portal";
         case k:
           return "Profiler";
-        case y:
+        case _:
           return "StrictMode";
         case w:
           return "Suspense";
@@ -278,8 +278,8 @@ function lr() {
       } finally {
         B = !1, V.current = u, We(), Error.prepareStackTrace = i;
       }
-      var j = e ? e.displayName || e.name : "", _e = j ? W(j) : "";
-      return typeof e == "function" && Y.set(e, _e), _e;
+      var j = e ? e.displayName || e.name : "", Re = j ? W(j) : "";
+      return typeof e == "function" && Y.set(e, Re), Re;
     }
     function Le(e, r, t) {
       return se(e, !1);
@@ -422,7 +422,7 @@ function lr() {
     var Xe = function(e, r, t, n, i, u, o) {
       var a = {
         // This tag allows us to uniquely identify this as a React Element
-        $$typeof: _,
+        $$typeof: R,
         // Built-in properties that belong on the element
         type: e,
         key: r,
@@ -477,7 +477,7 @@ function lr() {
     var z;
     z = !1;
     function K(e) {
-      return typeof e == "object" && e !== null && e.$$typeof === _;
+      return typeof e == "object" && e !== null && e.$$typeof === R;
     }
     function Ee() {
       {
@@ -584,7 +584,7 @@ Check the top-level render call using <` + t + ">.");
         e.ref !== null && (x(e), c("Invalid attribute `ref` supplied to `React.Fragment`."), x(null));
       }
     }
-    function Re(e, r, t, n, i, u) {
+    function ye(e, r, t, n, i, u) {
       {
         var o = Ae(e);
         if (!o) {
@@ -593,7 +593,7 @@ Check the top-level render call using <` + t + ">.");
           var v = Qe(i);
           v ? a += v : a += Ee();
           var s;
-          e === null ? s = "null" : q(e) ? s = "array" : e !== void 0 && e.$$typeof === _ ? (s = "<" + (h(e.type) || "Unknown") + " />", a = " Did you accidentally export a JSX literal instead of a component?") : s = typeof e, c("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", s, a);
+          e === null ? s = "null" : q(e) ? s = "array" : e !== void 0 && e.$$typeof === R ? (s = "<" + (h(e.type) || "Unknown") + " />", a = " Did you accidentally export a JSX literal instead of a component?") : s = typeof e, c("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", s, a);
         }
         var f = Ze(e, r, t, i, u);
         if (f == null)
@@ -615,10 +615,10 @@ Check the top-level render call using <` + t + ">.");
       }
     }
     function nr(e, r, t) {
-      return Re(e, r, t, !0);
+      return ye(e, r, t, !0);
     }
     function ar(e, r, t) {
-      return Re(e, r, t, !1);
+      return ye(e, r, t, !1);
     }
     var or = ar, ir = nr;
     I.Fragment = g, I.jsx = or, I.jsxs = ir;
@@ -626,19 +626,19 @@ Check the top-level render call using <` + t + ">.");
 }
 process.env.NODE_ENV === "production" ? H.exports = fr() : H.exports = lr();
 var Oe = H.exports;
-function vr({ countryCode: R, height: _, width: S }) {
-  const [g, y] = ur();
+function vr({ countryCode: y, height: R, width: S }) {
+  const [g, _] = ur();
   return sr(() => {
     (async () => {
       try {
-        const { default: E } = await import("../Flags-0R4kQfOU.js");
-        y(E[R.toUpperCase()]);
+        const { default: E } = await import("./Flags-0R4kQfOU.js");
+        _(E[y.toUpperCase()]);
       } catch (E) {
-        console.error(`Error loading flag for ${R}:`, E), y(void 0);
+        console.error(`Error loading flag for ${y}:`, E), _(void 0);
       }
     })();
-  }, [R]), g ? /* @__PURE__ */ Oe.jsx("img", { src: g, alt: `Flag of ${R}`, width: S, height: _ }) : /* @__PURE__ */ Oe.jsx("div", { style: { width: S ?? 40, height: _ } });
+  }, [y]), g ? /* @__PURE__ */ Oe.jsx("img", { src: g, alt: `Flag of ${y}`, width: S, height: R }) : /* @__PURE__ */ Oe.jsx("div", { style: { width: S ?? 40, height: R } });
 }
 export {
-  vr as ReactFlag
+  vr as ReactCountryFlag
 };
