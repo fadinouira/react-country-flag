@@ -1,6 +1,6 @@
 {
   "name": "@fadi-ui/react-country-flag",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "type": "module",
   "private": false,
   "scripts": {
@@ -41,6 +41,7 @@
     "vite-plugin-dts": "^3.7.2",
     "vite-tsconfig-paths": "^4.3.1"
   },
+  "homepage": "https://github.com/fadinouira/react-country-flag",
   "author": "Fadi NOUIRA",
   "license": "MIT"
 }

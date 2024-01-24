@@ -1,4 +1,4 @@
-# @fadi-ui/react-country-flag
+# @fadi-ui/react-country-flag (Demo)
 
 Display country flags in your React application.
 
@@ -8,17 +8,24 @@ Display country flags in your React application.
 npm install @fadi-ui/react-country-flag
 ```
 
+```bash
+yarn add @fadi-ui/react-country-flag
+```
+
+## Demo
+[Check out the demo here](https://stackblitz.com/~/github.com/fadinouira/react-country-flag-demo)
+
 ## Usage
 
 ```
 import React from 'react';
-import ReactCountryFlag from '@fadi-ui/react-country-flag';
+import { ReactCountryFlag } from '@fadi-ui/react-country-flag';
 
 const MyComponent = () => {
   return (
     <div>
       <h1>Country Flags</h1>
-      <ReactCountryFlag countryCode="US" height="50" width="50" />
+      <ReactCountryFlag countryCode="US" height={18} width={25} />
       {/* Add more flags as needed */}
     </div>
   );
@@ -38,7 +45,7 @@ export default MyComponent;
 ### Example
 
 ```
-import ReactCountryFlag from '@fadi-ui/react-country-flag';
+import { ReactCountryFlag } from '@fadi-ui/react-country-flag';
 
 const CountryFlagExample = () => {
   return (
@@ -46,7 +53,7 @@ const CountryFlagExample = () => {
       <h1>Country Flags Example</h1>
 
       {/* Display the flag for the United States with custom height and width */}
-      <ReactCountryFlag countryCode="US" height="50" width="50" />
+      <ReactCountryFlag countryCode="US" height={18} width={25} />
 
       {/* Add more flags with different country codes and dimensions as needed */}
     </div>
