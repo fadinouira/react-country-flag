@@ -17,7 +17,7 @@
       "import": "./dist/react-vite-library.es.js",
       "require": "./dist/react-vite-library.umd.js"
     },
-    "./dist/style.css": "./dist/style.css"
+    "./dist/index.d.ts": "./dist/index.d.ts"
   },
   "main": "./dist/react-vite-library.umd.js",
   "module": "./dist/react-vite-library.es.js",
