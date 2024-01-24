@@ -1,6 +1,6 @@
 {
   "name": "@fadi-ui/react-country-flag",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "private": false,
   "scripts": {
@@ -17,7 +17,7 @@
       "import": "./dist/react-vite-library.es.js",
       "require": "./dist/react-vite-library.umd.js"
     },
-    "./dist/index.d.ts": "./dist/index.d.ts"
+    "./index.d.ts": "./dist/index.d.ts"
   },
   "main": "./dist/react-vite-library.umd.js",
   "module": "./dist/react-vite-library.es.js",
