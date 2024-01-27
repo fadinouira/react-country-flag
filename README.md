@@ -1,4 +1,4 @@
-# @fadi-ui/react-country-flag (Demo)
+# @fadi-ui/react-country-flag
 
 Display country flags in your React application.
 
