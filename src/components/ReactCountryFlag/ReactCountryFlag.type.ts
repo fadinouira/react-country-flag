@@ -1,3 +1,4 @@
+import { CSSProperties } from 'react';
 import { CountryCodes, FlagsType } from '../Flags';
 
 type LowercaseCountries = {
@@ -10,4 +11,6 @@ export interface ReactCountryFlagProps {
   countryCode: CountryCodes | LowercaseCountryCodes;
   width?: number;
   height?: number;
+  style?: CSSProperties;
+  size?: number;
 }
