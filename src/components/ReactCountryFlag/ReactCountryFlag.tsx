@@ -12,7 +12,7 @@ export function ReactCountryFlag({
   const [flagPath, setFlagPath] = useState<string | undefined>();
 
   const [currentWidth, currentHeight] = useMemo(
-    () => (size ? [size, size * FLAG_ASPECT_RATIO] : [height, width ?? 40]),
+    () => (size ? [size, size * FLAG_ASPECT_RATIO] : [width ?? 40, height]),
     [size, height, width],
   );
 
