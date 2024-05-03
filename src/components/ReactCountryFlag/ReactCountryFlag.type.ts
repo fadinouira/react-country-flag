@@ -1,4 +1,4 @@
-import { CountryCodes, FlagsType } from '../Flags/Flags';
+import { CountryCodes, FlagsType } from '../Flags';
 
 type LowercaseCountries = {
   [K in keyof FlagsType as Lowercase<K>]: FlagsType[K];

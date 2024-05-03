@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { CountryCodes } from '../Flags/Flags';
+import { CountryCodes } from '../Flags';
 import { ReactCountryFlagProps } from './ReactCountryFlag.type';
 
 export function ReactCountryFlag({ countryCode, height, width }: ReactCountryFlagProps) {
@@ -8,7 +8,7 @@ export function ReactCountryFlag({ countryCode, height, width }: ReactCountryFla
   useEffect(() => {
     const loadFlag = async () => {
       try {
-        const { default: FLAGS } = await import('../Flags/Flags');
+        const { FLAGS } = await import('../Flags');
         setFlagPath(FLAGS[(countryCode as string).toUpperCase() as CountryCodes]);
       } catch (error) {
         console.error(`Error loading flag for ${countryCode}:`, error);
