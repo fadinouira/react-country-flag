@@ -253,7 +253,7 @@ import ZA from '../../assets/flags/za.jpg';
 import ZM from '../../assets/flags/zm.jpg';
 import ZW from '../../assets/flags/zw.jpg';
 
-const UNTYPED_FLAGS = {
+export const UNTYPED_FLAGS = {
   AD,
   AE,
   AF,
@@ -509,11 +509,3 @@ const UNTYPED_FLAGS = {
   ZM,
   ZW,
 };
-
-export type FlagsType = typeof UNTYPED_FLAGS;
-
-export type CountryCodes = keyof FlagsType;
-
-const FLAGS = UNTYPED_FLAGS as Record<CountryCodes, string>;
-
-export default FLAGS;
