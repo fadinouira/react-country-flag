@@ -62,7 +62,7 @@ export default MyComponent;
 ### Example
 
 ```jsx
-import { ReactCountryFlag } from '@fadi-ui/react-country-flag';
+import { ReactCountryFlag, ReactCountryEmoji } from '@fadi-ui/react-country-flag';
 
 const CountryFlagExample = () => {
   return (
