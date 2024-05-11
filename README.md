@@ -16,11 +16,11 @@ yarn add @fadi-ui/react-country-flag
 
 [Check out the demo here](https://stackblitz.com/~/github.com/fadinouira/react-country-flag-demo)
 
-## BREAKING CHANGES
+## NEW FEATURES
 
-- v1.x has breaking changes due to the addition of the flag emoji component and the introduction of new props such as `size` and `style`.
+- v1.x has ne features due to the addition of the flag emoji component and the introduction of new props such as `size` and `style`.
 
-### Changes Introduced:
+### Features Introduced:
 
 - Added support for flag emoji component.
 - Introduced new props:
